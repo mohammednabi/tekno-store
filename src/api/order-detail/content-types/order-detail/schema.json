@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "order_details",
+  "info": {
+    "singularName": "order-detail",
+    "pluralName": "order-details",
+    "displayName": "order_detail",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "order_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::order-item.order-item",
+      "mappedBy": "order_detail"
+    },
+    "total": {
+      "type": "float"
+    },
+    "user_payment": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::user-payment.user-payment",
+      "inversedBy": "order_detail"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "order_details"
+    },
+    "order_notes": {
+      "type": "text"
+    },
+    "arrivedAt": {
+      "type": "datetime"
+    },
+    "state": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "street": {
+      "type": "string"
+    },
+    "postal_code": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "second_phone": {
+      "type": "string"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "placed",
+        "delivery",
+        "arrived"
+      ],
+      "default": "placed"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mini_ads",
+  "info": {
+    "singularName": "mini-ad",
+    "pluralName": "mini-ads",
+    "displayName": "mini-ad"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "content": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text"
+    }
+  }
+}

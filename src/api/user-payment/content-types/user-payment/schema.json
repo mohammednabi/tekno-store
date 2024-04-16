@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_payments",
+  "info": {
+    "singularName": "user-payment",
+    "pluralName": "user-payments",
+    "displayName": "user_payment"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "user_payments"
+    },
+    "payment_type": {
+      "type": "string"
+    },
+    "cardholder_name": {
+      "type": "string"
+    },
+    "card_number": {
+      "type": "string"
+    },
+    "expiration_month": {
+      "type": "string"
+    },
+    "expiration_year": {
+      "type": "string"
+    },
+    "cvv": {
+      "type": "string"
+    },
+    "order_detail": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::order-detail.order-detail",
+      "mappedBy": "user_payment"
+    }
+  }
+}

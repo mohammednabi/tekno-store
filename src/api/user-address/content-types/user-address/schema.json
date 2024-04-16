@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_addresses",
+  "info": {
+    "singularName": "user-address",
+    "pluralName": "user-addresses",
+    "displayName": "user_address"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "street": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "postal_code": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "second_phone": {
+      "type": "string"
+    },
+    "fullname": {
+      "type": "string"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "user_addresses"
+    }
+  }
+}

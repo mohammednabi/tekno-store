@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "advertises",
+  "info": {
+    "singularName": "advertise",
+    "pluralName": "advertises",
+    "displayName": "advertise",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "thumb": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

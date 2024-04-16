@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fast_ads",
+  "info": {
+    "singularName": "fast-ad",
+    "pluralName": "fast-ads",
+    "displayName": "fast_ad",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "ad": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

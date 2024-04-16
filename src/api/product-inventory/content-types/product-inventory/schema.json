@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_inventories",
+  "info": {
+    "singularName": "product-inventory",
+    "pluralName": "product-inventories",
+    "displayName": "product_inventory",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "available_in_stock": {
+      "type": "integer"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "product_inventory"
+    }
+  }
+}
