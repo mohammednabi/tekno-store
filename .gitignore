@@ -113,3 +113,12 @@ dist
 build
 .strapi-updater.json
 package-lock.json
+
+
+# custom files
+.editorgonfig
+.env.example
+.eslint
+.strapi*
+.eslintignore
+yarn.lock

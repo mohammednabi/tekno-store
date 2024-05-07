@@ -1800,7 +1800,19 @@
     aria-hidden "^1.2.3"
     react-remove-scroll "^2.5.7"
 
-"@strapi/utils@^4.14.0", "@strapi/utils@4.21.1":
+"@strapi/utils@^4.14.0", "@strapi/utils@^4.24.1":
+  version "4.24.1"
+  resolved "https://registry.npmjs.org/@strapi/utils/-/utils-4.24.1.tgz"
+  integrity sha512-6bYT0GH7r8dhCXVtaOJdd1F3LGnetvupvcRiFmUlEszn9mgzrvcspXR832k2UPK+3QnjsP1EsaIb9nskzgZYUQ==
+  dependencies:
+    "@sindresorhus/slugify" "1.1.0"
+    date-fns "2.30.0"
+    http-errors "1.8.1"
+    lodash "4.17.21"
+    p-map "4.0.0"
+    yup "0.32.9"
+
+"@strapi/utils@4.21.1":
   version "4.21.1"
   resolved "https://registry.npmjs.org/@strapi/utils/-/utils-4.21.1.tgz"
   integrity sha512-SbaAO6bT3bHWqhAn0cvkCqp9JBBWJJlZRUTu4QGRJunFpC3lOAI+uTZJk5a1KNkdZoTUup8+l8yjcs+G7LBheQ==
